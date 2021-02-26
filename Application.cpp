@@ -33,12 +33,10 @@ void solve(vector<int>guests, int n){
 }
 
 int main(){
-    using Vector = vector<int>;
-
     int n;
 
     while(cin >> n){
-        Vector guests;
+        vector<int>guests;
         int el;
 
         for(int i  = 0; i < n; ++i){

@@ -17,13 +17,13 @@ var findTilt = function(root) {
     
     if(root.left != null){
         nodeTilt += findTilt(root.left);
+        root.val += root.left.val;
     }
     
     if(root.right != null){
         nodeTilt += findTilt(root.right);
+        root.val += root.right.val;
     }
-    
-    root.val += (root.left?.val || 0) + (root.right?.val || 0);
     
     return nodeTilt + Math.abs((root.left?.val || 0) - (root.right?.val || 0));;
 };

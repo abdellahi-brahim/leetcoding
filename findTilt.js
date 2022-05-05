@@ -13,7 +13,7 @@
 var findTilt = function(root) {
     if(root == null) return 0;
     
-    nodeTilt = 0;
+    let nodeTilt = 0;
     
     if(root.left != null){
         nodeTilt += findTilt(root.left);
